@@ -64,10 +64,10 @@
         nav_layer {
             label = "NAV";
             bindings = <
-                &none           &none           &none           &none           &none           &none           &kp PG_DN       &kp PG_UP       &none           &none         
-                &kp LGUI        &kp LALT        &kp LCTRL       &kp LSHIFT      &none           &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &none     
-                &kp LC(Z)       &kp LC(X)       &kp LC(C)       &kp LC(V)       &kp LC(Y)       &kp INS         &kp HOME        &kp END         &kp CAPS        &none       
-                                                &none           &none           &none           &kp SPACE       &kp RET         &kp ESC
+                &kp EXCL        &kp AT          &kp HASH        &kp DLLR        &kp PRCNT       &kp CARET       &kp AMPS        &kp STAR        &kp TILDE       &none
+                &hm LGUI GRAVE  &hm LALT UNDER  &hm LSHFT MINUS &hm LCTRL EQUAL &kp PSCRN       &none           &kp LEFT        &kp UP          &kp DOWN        &kp RIGHT
+                &kp LC(Z)       &kp LC(X)       &kp LC(C)       &kp LC(V)       &kp LC(Y)       &none           &kp HOME        &kp SQT         &kp DQT         &kp END
+                                                &none           &none           &none           &kp SPACE       &kp BSPC        &kp DEL
             >;
         };
 
