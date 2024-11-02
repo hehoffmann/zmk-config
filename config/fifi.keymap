@@ -8,7 +8,7 @@
 #define MEDIA 1
 #define NAV 2
 #define BTA 3
-#define SYM 4
+#define BTB 4
 #define NUM 5
 #define FN 6
 
@@ -47,7 +47,7 @@
                 &kp Q           &kp W           &kp E           &kp R           &kp T           &kp Y           &kp U           &kp I           &kp O           &kp P
                 &hm LGUI A      &hm LALT S      &hm LSHFT D     &hm LCTRL F     &kp G           &kp H           &hm RCTRL J     &hm RSHFT K     &hm RALT L      &hm RGUI SEMI
                 &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH
-                                                &lt MEDIA TAB   &lt NAV RET     &lt BTA ESC     &lt SYM SPACE   &lt NUM BSPC    &lt FN DEL
+                                                &lt MEDIA TAB   &lt NAV RET     &lt BTA ESC     &lt BTB SPACE   &lt NUM BSPC    &lt FN DEL
             >;
         };
 
@@ -81,13 +81,13 @@
             >;
         };
 
-        symbol_layer {
-            label = "SYMBOL";
+        btb_layer {
+            label = "BTB";
             bindings = <
-                &kp EXCL        &kp AT          &kp HASH        &kp DLLR         &kp PRCNT      &none           &none           &none           &none           &none          
-                &kp PLUS        &kp EQUAL       &kp UNDER       &kp MINUS        &kp COLON      &none           &kp RSHIFT      &kp RCTRL       &kp RALT        &kp RGUI        
-                &kp CARET       &kp AMPS        &kp STAR        &kp TILDE        &kp GRAVE      &none           &none           &none           &none           &kp PIPE       
-                                                &kp SEMI        &kp BSPC         &kp BSLH       &none           &none           &none 
+                &none           &none           &none           &none           &none           &bt BT_CLR      &bt BT_SEL 3    &bt BT_SEL 2    &bt BT_SEL 1    &bt BT_SEL 0
+                &kp LGUI        &kp LALT        &kp LSHFT       &kp LCTRL       &none           &none           &kp RCTRL       &kp RSHFT       &kp RALT        &kp RGUI
+                &none           &none           &none           &none           &none           &bootloader     &none           &none           &none           &none
+                                                &kp TAB         &kp RET         &kp ESC         &none           &none           &none
             >;
         };
 
