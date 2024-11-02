@@ -51,65 +51,65 @@
             >;
         };
 
-      media_layer {
-              label = "MEDIA";
-              bindings = <
-                  &none           &none           &none           &none           &none           &none           &none           &none           &none           &none           
-                  &kp LGUI        &kp LALT        &kp LCTRL       &kp LSHIFT      &none           &none           &kp C_PREV      &kp C_VOL_UP    &kp C_VOL_DN    &kp C_NEXT      
-                  &none           &none           &none           &none           &none           &none           &none           &none           &none           &none          
-                                                  &none           &none           &none           &kp C_STOP      &kp C_PLAY      &kp C_MUTE
-              >;
-      };
+        media_layer {
+            label = "MEDIA";
+            bindings = <
+                &none           &none           &none           &none           &none           &none           &kp C_VOL_DN    &kp C_VOL_UP    &none           &none
+                &kp LGUI        &kp LALT        &kp LSHFT       &kp LCTRL       &none           &none           &kp C_MUTE      &kp C_PP        &none           &none
+                &none           &none           &none           &none           &none           &none           &kp C_PREV      &kp C_NEXT      &none           &none
+                                                &none           &none           &none           &kp SPACE       &kp BSPC        &kp DEL
+            >;
+        };
 
-      nav_layer {
-              label = "NAV";
-              bindings = <
-                  &none           &none           &none           &none           &none           &none           &kp PG_DN       &kp PG_UP       &none           &none         
-                  &kp LGUI        &kp LALT        &kp LCTRL       &kp LSHIFT      &none           &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &none     
-                  &kp LC(Z)       &kp LC(X)       &kp LC(C)       &kp LC(V)       &kp LC(Y)       &kp INS         &kp HOME        &kp END         &kp CAPS        &none       
-                                                  &none           &none           &none           &kp SPACE       &kp RET         &kp ESC
-              >;
-      };
+        nav_layer {
+            label = "NAV";
+            bindings = <
+                &none           &none           &none           &none           &none           &none           &kp PG_DN       &kp PG_UP       &none           &none         
+                &kp LGUI        &kp LALT        &kp LCTRL       &kp LSHIFT      &none           &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &none     
+                &kp LC(Z)       &kp LC(X)       &kp LC(C)       &kp LC(V)       &kp LC(Y)       &kp INS         &kp HOME        &kp END         &kp CAPS        &none       
+                                                &none           &none           &none           &kp SPACE       &kp RET         &kp ESC
+            >;
+        };
 
-      mouse_layer {
-              label = "MOUSE";
-              bindings = <
-                  &bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bootloader     &none           &none           &none           &none           &none          
-                  &kp LGUI        &kp LALT        &kp LCTRL       &kp LSHIFT      &none           &none           &none           &none           &none           &none           
-                  &none           &none           &none           &none           &none           &none           &none           &none           &none           &none           
-                                                  &none           &none           &none           &none           &none           &none 
-              >;
-      };
+        mouse_layer {
+            label = "MOUSE";
+            bindings = <
+                &bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bootloader     &none           &none           &none           &none           &none          
+                &kp LGUI        &kp LALT        &kp LCTRL       &kp LSHIFT      &none           &none           &none           &none           &none           &none           
+                &none           &none           &none           &none           &none           &none           &none           &none           &none           &none           
+                                                &none           &none           &none           &none           &none           &none 
+            >;
+        };
 
-      symbol_layer {
-              label = "SYMBOL";
-              bindings = <
-                  &kp EXCL        &kp AT          &kp HASH        &kp DLLR         &kp PRCNT      &none           &none           &none           &none           &none          
-                  &kp PLUS        &kp EQUAL       &kp UNDER       &kp MINUS        &kp COLON      &none           &kp RSHIFT      &kp RCTRL       &kp RALT        &kp RGUI        
-                  &kp CARET       &kp AMPS        &kp STAR        &kp TILDE        &kp GRAVE      &none           &none           &none           &none           &kp PIPE       
-                                                  &kp SEMI        &kp BSPC         &kp BSLH       &none           &none           &none 
-              >;
-      };
+        symbol_layer {
+            label = "SYMBOL";
+            bindings = <
+                &kp EXCL        &kp AT          &kp HASH        &kp DLLR         &kp PRCNT      &none           &none           &none           &none           &none          
+                &kp PLUS        &kp EQUAL       &kp UNDER       &kp MINUS        &kp COLON      &none           &kp RSHIFT      &kp RCTRL       &kp RALT        &kp RGUI        
+                &kp CARET       &kp AMPS        &kp STAR        &kp TILDE        &kp GRAVE      &none           &none           &none           &none           &kp PIPE       
+                                                &kp SEMI        &kp BSPC         &kp BSLH       &none           &none           &none 
+            >;
+        };
 
-      num_layer {
-              label = "NUMBER";
-              bindings = <
-                  &none           &none           &kp LBKT        &kp RBKT        &none           &kp COMMA       &kp N7         &kp N8           &kp N9          &kp PLUS 
-                  &none           &none           &kp LPAR        &kp RPAR        &none           &kp DOT         &kp N4         &kp N5           &kp N6          &kp MINUS          
-                  &none           &none           &kp LBRC        &kp RBRC        &none           &kp N0          &kp N1         &kp N2           &kp N3          &kp STAR          
-                                                  &kp DEL         &kp BSPC        &kp TAB         &none           &none          &none 
-              >;
-      };
+        num_layer {
+            label = "NUMBER";
+            bindings = <
+                &none           &none           &kp LBKT        &kp RBKT        &none           &kp COMMA       &kp N7         &kp N8           &kp N9          &kp PLUS 
+                &none           &none           &kp LPAR        &kp RPAR        &none           &kp DOT         &kp N4         &kp N5           &kp N6          &kp MINUS          
+                &none           &none           &kp LBRC        &kp RBRC        &none           &kp N0          &kp N1         &kp N2           &kp N3          &kp STAR          
+                                                &kp DEL         &kp BSPC        &kp TAB         &none           &none          &none 
+            >;
+        };
 
-      fn_layer {
-              label = "FN";
-              bindings = <
-                  &kp F12         &kp F7          &kp F8          &kp F9          &kp PSCRN       &bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bootloader    
-                  &kp F11         &kp F4          &kp F5          &kp F6          &kp SLCK        &none           &kp RSHIFT      &kp RCTRL       &kp RALT        &kp RGUI        
-                  &kp F10         &kp F1          &kp F2          &kp F3          &kp PAUSE_BREAK &tog BASE       &none           &none           &none           &none           
-                                                  &none           &none           &none           &none           &none           &none 
-              >;
-      };
+        fn_layer {
+            label = "FN";
+            bindings = <
+                &kp F12         &kp F7          &kp F8          &kp F9          &kp PSCRN       &bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bootloader    
+                &kp F11         &kp F4          &kp F5          &kp F6          &kp SLCK        &none           &kp RSHIFT      &kp RCTRL       &kp RALT        &kp RGUI        
+                &kp F10         &kp F1          &kp F2          &kp F3          &kp PAUSE_BREAK &tog BASE       &none           &none           &none           &none           
+                                                &none           &none           &none           &none           &none           &none 
+            >;
+        };
 
     };
 };
