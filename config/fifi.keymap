@@ -5,13 +5,12 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define BASE 0
-#define COLEMAK 1
-#define MEDIA 2
-#define NAV 3
-#define MOUSE 4
-#define SYM 5
-#define NUM 6
-#define FN 7
+#define MEDIA 1
+#define NAV 2
+#define MOUSE 3
+#define SYM 4
+#define NUM 5
+#define FN 6
 
 &lt {
     tapping-term-ms = <180>;
@@ -49,18 +48,9 @@
                 &hm LGUI A      &hm LALT S      &hm LSHFT D     &hm LCTRL F     &kp G           &kp H           &hm RCTRL J     &hm RSHFT K     &hm RALT L      &hm RGUI SEMI
                 &kp Z           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH
                                                 &lt MEDIA TAB   &lt NAV RET     &lt MOUSE ESC   &lt SYM SPACE   &lt NUM BSPC    &lt FN DEL
-          >;
+            >;
         };
 
-      colemak_layer {
-          label = "COLEMAK"; 
-          bindings = <   
-              &kp Q               &kp W           &kp F           &kp P           &kp B           &kp J           &kp L           &kp U           &kp Y           &kp APOS        
-              &hm LGUI A          &hm LALT R      &hm LCTRL S     &hm LSHIFT T    &kp G           &kp M           &hm RSHIFT N    &hm RCTRL E     &hm RALT I      &hm RGUI O  
-              &kp Z               &kp X           &kp C           &kp D           &kp V           &kp K           &kp H           &kp COMMA       &kp DOT         &kp FSLH       
-                                                  &lt MEDIA DEL   &lt NAV BSPC    &lt MOUSE TAB   &lt SYM SPACE   &lt NUM RET     &lt FN ESC  
-          >;      
-      };
       media_layer {
               label = "MEDIA";
               bindings = <
@@ -115,7 +105,7 @@
               label = "FN";
               bindings = <
                   &kp F12         &kp F7          &kp F8          &kp F9          &kp PSCRN       &bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bootloader    
-                  &kp F11         &kp F4          &kp F5          &kp F6          &kp SLCK        &tog COLEMAK    &kp RSHIFT      &kp RCTRL       &kp RALT        &kp RGUI        
+                  &kp F11         &kp F4          &kp F5          &kp F6          &kp SLCK        &none           &kp RSHIFT      &kp RCTRL       &kp RALT        &kp RGUI        
                   &kp F10         &kp F1          &kp F2          &kp F3          &kp PAUSE_BREAK &tog BASE       &none           &none           &none           &none           
                                                   &none           &none           &none           &none           &none           &none 
               >;
