@@ -96,8 +96,8 @@
             label = "NUMBER";
             bindings = <
                 &kp PIPE        &kp BACKSLASH   &kp LBKT        &kp RBKT        &kp COMMA       &kp MINUS       &kp N7          &kp N8          &kp N9          &kp SLASH
-                &none           &kp RA(5)       &kp LPAR        &kp RPAR        &kp DOT         &kp PLUS        &kp N4          &kp N5          &kp N6          &kp STAR
-                &none           &kp RA(S)       &kp LBRC        &kp RBRC        &none           &kp N0          &kp N1          &kp N2          &kp N3          &kp C_AL_CALC
+                &none           &kp RA(N5)      &kp LPAR        &kp RPAR        &kp DOT         &kp PLUS        &kp N4          &kp N5          &kp N6          &kp STAR
+                &none           &kp RA(LS(S))   &kp LBRC        &kp RBRC        &none           &kp N0          &kp N1          &kp N2          &kp N3          &kp C_AL_CALC
                                                 &kp TAB         &kp RET         &kp ESC         &none           &none           &none
             >;
         };
